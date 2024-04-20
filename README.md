@@ -1,6 +1,6 @@
 put this folder and file to the root of laravel project for dockerize it
 and with helper mke commande
-
+## credit to [emad-zaamout](https://github.com/emad-zaamout)
 This build delivers top performance.
 
 By using nginx, php-fpm and op_cache, were able to reduce our request response times and serve requests in 5ms!
