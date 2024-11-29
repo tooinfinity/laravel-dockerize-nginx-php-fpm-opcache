@@ -1,6 +1,6 @@
 services:
-    2pos:
-        container_name: 2pos
+    2pos: # change this for every project 
+        container_name: 2pos # change this for every project 
         build:
             context: .
             target: php
@@ -13,15 +13,15 @@ services:
         ports:
             - 9000:8080
         depends_on:
-            - 2pos-database
-    2pos-database:
-        container_name: 2pos-database
+            - 2pos-database # change this for every project 
+    2pos-database: # change this for every project 
+        container_name: 2pos-database # change this for every project 
         image: mysql:8.0
         ports:
             -   3306:3306
         environment:
             - MYSQL_DATABASE=default
-            - MYSQL_USER=2pos
+            - MYSQL_USER=2pos # change this for every project 
             - MYSQL_PASSWORD=secret
             - MYSQL_ROOT_PASSWORD=secret
         volumes:
